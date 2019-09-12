@@ -2,21 +2,6 @@ import speech_recognition as sr
 import pyttsx3 as tts
 import re
 
-"""
-### REQUIRED LIBRARIES ###
-
-PyAudio in Windows:
-    pip install pipwin
-    pipwin install pyaudio
-
-SpeechRecognition 3.8.1:
-    pip install SpeechRecognition 
-
-Text-to-Speech:
-    sudo pip install pyttsx
-"""
-
-
 # TODO: Based on the number parsed from the String literal, find out which chapters are due for that week
 def findChapter(week):
     if week == 0:
