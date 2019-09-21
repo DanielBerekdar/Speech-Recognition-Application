@@ -64,9 +64,9 @@ def output(msg):
 
 # TODO: Using the  microphone as a source for the speech recognition module to read the voice as input and store it as a String literal:
 recognizer = sr.Recognizer
-with sr.Microphone() as source:
+with sr.Microphone() as mic:
     print("Speak!")
-    audioInput = recognizer().listen(source)
+    audioInput = recognizer().listen(mic)
     try:
         voiceToText = recognizer().recognize_google(audioInput)
         print("Your input was: " + voiceToText)
